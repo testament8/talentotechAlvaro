@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icono.png" type="image/png" />
+    <title>Talento Tech TP1</title>
+
+    <!--Docs css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="intro.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+
+<body>
+
+    <!--Menu -->
+
+    <header class="contenedor">
+
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" width="10%"></a>
+        </div>
+
+
+        <div class="Menu">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Esports.html">Esports</a></li>
+                    <li><a href="Catalogo.html">Catálogo</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <div class="container">
+        <div class="contactanos">
+            <h1>
+                ¿Tienes alguna sugerencia o comentario sobre nuestros juegos?
+                ¡Contáctanos a través de nuestro formulario y estaremos encantados de
+                ayudarte!
+            </h1>
+        </div>
+        <div class="div-formulario">
+            <form class="formulario" id="formulario" method="post" novalidate>
+                <label for="gamertag">Gamertag*</label>
+                <input type="text" id="gamertag" name="gamertag" placeholder="codoAcodo-2024" />
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" />
+
+                <label for="telefono">Teléfono*</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="11 234 56789" />
+
+                <label for="motivo">Motivo de contacto*</label>
+                <select id="motivo" name="motivo">
+                    <option value="">Selecciona un motivo</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="queja">Queja</option>
+                </select>
+
+                <label for="mensaje">Mensaje*</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Acá escribi tu mensaje..."></textarea>
+
+                <label for="file-imagen">Adjuntar imagen del problema:</label>
+                <input type="file" id="file-imagen" name="file-imagen" />
+
+                <label>
+                    <input type="checkbox" id="suscripcion" name="suscripcion" />
+                    Suscribite para recibir novedades!
+                </label>
+                <div class="mensajeError">
+                    <p>
+                        <i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Por
+                        favor, completa el formulario correctamente.
+                    </p>
+                </div>
+                <button type="submit">Enviar</button>
+                <p class="mensajeExito" id="mensajeExito">
+                    Formulario enviado correctamente
+                </p>
+            </form>
+        </div>
+        <section>
+            <div class="visitanos">
+                <h2>Si lo desea, puedes visitarnos en Balcarse 78, CABA.</h2>
+            </div>
+            <div class="gmapa" id="gmapa">
+                <iframe class="ifgmapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2367.161907603485!2d-58.371441927179795!3d-34.60839199833346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0x2c5b4b3849944476!2sCODO%20A%20CODO%20GAMING!5e0!3m2!1ses-419!2sar!4v1716565416235!5m2!1ses-419!2sar"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+    <div class="space"></div>
+
+
+
+
+
+
+
+
+    <br><br><br>
+
+    <hr>
+
+    <!--footer.js -->
+    <div class="footer">
+        <footer id="footer-placeholder"></footer>
+    </div>
+    <!--Scripts js -->
+    <script src="js/footer.js"></script> <!--Footer -->
+    <script src="js/banner.js"></script> <!--Banner Index -->
+    <script src="js/rawgapi.js"></script> <!--Carusel catalogo juegos expansivo -->
+
+
+
+
+</body>
+
+</html>
